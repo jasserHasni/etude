@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>صفحة العروض</title>
+    <style>
+      /* General styles */
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f3f4f6; /* Equivalent to bg-zinc-100 */
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .min-h-screen {
+        min-height: 100vh; /* Equivalent to min-h-screen */
+        padding: 24px; /* Equivalent to p-6 */
+      }
+
+      h1 {
+        font-size: 24px; /* Equivalent to text-3xl */
+        font-weight: bold; /* Equivalent to font-bold */
+        margin-bottom: 16px; /* Equivalent to mb-4 */
+        text-align: center; /* Center text */
+      }
+
+      p {
+        text-align: center; /* Center text */
+        margin-bottom: 24px; /* Equivalent to mb-6 */
+        color: #374151; /* Equivalent to text-zinc-700 */
+      }
+
+      .flex {
+        display: flex;
+        justify-content: center;
+        gap: 16px; /* Equivalent to space-x-4 */
+      }
+
+      .offer-card {
+        background-color: #ffffff;
+        padding: 24px; /* Equivalent to p-6 */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Equivalent to shadow-lg */
+        border-radius: 8px; /* Equivalent to rounded-lg */
+        width: 320px; /* Equivalent to w-80 */
+      }
+
+      .offer-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 16px; /* Equivalent to mb-4 */
+      }
+
+      .offer-header img {
+        width: 64px; /* Equivalent to w-16 */
+        height: 64px; /* Equivalent to h-16 */
+      }
+
+      .offer-badge {
+        background-color: #ef4444; /* Equivalent to bg-red-500 */
+        color: #ffffff;
+        font-size: 12px; /* Equivalent to text-xs */
+        padding: 4px 8px; /* Equivalent to px-2 py-1 */
+        border-radius: 4px; /* Equivalent to rounded */
+      }
+
+      h2 {
+        font-size: 20px; /* Equivalent to text-xl */
+        font-weight: bold; /* Equivalent to font-bold */
+        margin-bottom: 8px; /* Equivalent to mb-2 */
+      }
+
+      .offer-description,
+      .offer-price {
+        margin-bottom: 16px; /* Equivalent to mb-4 */
+      }
+
+      ul {
+        font-size: 14px; /* Equivalent to text-sm */
+        margin-bottom: 16px; /* Equivalent to mb-4 */
+        list-style: none;
+        padding: 0;
+      }
+
+      li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px; /* Equivalent to mb-2 */
+      }
+
+      li span {
+        margin-right: 8px; /* Equivalent to mr-2 */
+      }
+
+      .text-green-500 {
+        color: #10b981;
+      }
+
+      .text-red-500 {
+        color: #ef4444;
+      }
+
+      .btn-subscribe {
+        background-color: #fbbf24; /* Equivalent to bg-yellow-500 */
+        color: #ffffff;
+        font-weight: bold; /* Equivalent to font-bold */
+        padding: 8px 16px; /* Equivalent to py-2 px-4 */
+        border: none;
+        border-radius: 4px; /* Equivalent to rounded */
+        width: 100%; /* Equivalent to w-full */
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .btn-subscribe:hover {
+        background-color: #f59e0b; /* Darker yellow */
+      }
+
+      .bg-blue-500 {
+        background-color: #3b82f6; /* Equivalent to bg-blue-500 */
+      }
+
+      .bg-blue-500:hover {
+        background-color: #2563eb; /* Darker blue */
+      }
+    </style>
+  </head>
+  <body class="min-h-screen bg-zinc-100 p-6 flex flex-col items-center">
+    <h1 class="text-3xl font-bold mb-4">صفحة العروض</h1>
+    <p class="text-center mb-6">
+      ابدأ طريقك نحو النجاح! تمتع بأفضل محتوى تعليمي وندعم متواصلي طلبة السنة
+      الدراسية من خلال مختلف عروضنا.
+    </p>
+    <div class="flex space-x-4">
+      <div class="offer-card bg-white rounded-lg shadow-lg p-6 w-80">
+        <div class="offer-header flex justify-between items-center mb-4">
+          <img
+            src="https://scontent.ftun10-2.fna.fbcdn.net/v/t39.30808-6/352820307_274511655052105_3793994531289542701_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=D9YeXDjkanYQ7kNvgFtMLe8&_nc_ht=scontent.ftun10-2.fna&oh=00_AYBH-tOzDYizhsmcF5dSLe19lPAilU_49PtMyYXR2nZIAA&oe=667BEFE2"
+            alt="Offer 1 Logo"
+            class="w-16 h-16"
+          />
+          <span
+            class="offer-badge bg-red-500 text-white text-xs px-2 py-1 rounded"
+            >جديد</span
+          >
+        </div>
+        <h2 class="text-xl font-bold mb-2">8 Séances / 60dt</h2>
+        <p class="offer-description text-zinc-700 mb-4">
+          عرض لمدة شهر لتلامذة ال 3 ثانوي
+        </p>
+        <p class="offer-price text-lg font-bold mb-4"></p>
+        <ul class="text-sm mb-4">
+          <li class="flex items-center mb-2">
+            <span class="text-green-500 mr-2">✔</span> حصص مباشرة تفاعلية (Live)
+          </li>
+          <li class="flex items-center mb-2">
+            <span class="text-red-500 mr-2">✔</span> تسجيلات الحصص المباشرة
+            (REC)
+          </li>
+          <li class="flex items-center mb-2">
+            <span class="text-green-500 mr-2">✔</span> رياضيات و فيزياء
+          </li>
+          <li class="flex items-center mb-2">
+            <span class="text-green-500 mr-2">✔</span> امتحانات إضافية لمراجعة
+            البرنامج الدراسي
+          </li>
+          <li class="flex items-center mb-2">
+            <span class="text-green-500 mr-2">✔</span>
+            طرح الأسئلة في أي وقت
+          </li>
+        </ul>
+        <button
+          class="btn-subscribe bg-blue-500 text-white font-bold py-2 px-4 rounded w-full"
+          onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSfv7Tno3xUyYhDr1UYC6xNDT4_o1pMrWRpfgNjprhtjCIrnCw/viewform?usp=sf_link'"
+        >
+          اشترك الآن
+        </button>
+      </div>
+
+      <div class="offer-card bg-white rounded-lg shadow-lg p-6 w-80">
+        <div class="offer-header flex justify-between items-center mb-4">
+          <img
+            src="https://scontent.ftun10-2.fna.fbcdn.net/v/t39.30808-6/352820307_274511655052105_3793994531289542701_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_ohc=D9YeXDjkanYQ7kNvgFtMLe8&_nc_ht=scontent.ftun10-2.fna&oh=00_AYBH-tOzDYizhsmcF5dSLe19lPAilU_49PtMyYXR2nZIAA&oe=667BEFE2"
+            alt="Offer 2 Logo"
+            class="w-16 h-16"
+          />
+        </div>
+        <h2 class="text-xl font-bold mb-2">4 Séances / 35dt</h2>
+        <p class="offer-description text-zinc-700 mb-4">
+          عرض لمدة اسبوعين لتلامذة ال 3 ثانوي
+        </p>
+        <p class="offer-price text-lg font-bold mb-4"></p>
+        <ul class="text-sm mb-4">
+          <li class="flex items-center mb-2">
+            <span class="text-green-500 mr-2">✔</span> حصص مباشرة تفاعلية (Live)
+          </li>
+          <li class="flex items-center mb-2">
+            <span class="text-green-500 mr-2">✔</span> رياضيات و فيزياء
+          </li>
+          <li class="flex items-center mb-2">
+            <span class="text-green-500 mr-2">✔</span> تمارين مرفقة بالإصلاح
+            مطابقة للبرنامج الرسمي
+          </li>
+          <li class="flex items-center mb-2">
+            <span class="text-green-500 mr-2">✔</span> مجلات تلخيص الدروس (PDF +
+            Magazines)
+          </li>
+          <li class="flex items-center mb-2">
+            <span class="text-green-500 mr-2">✔</span>
+            طرح الأسئلة في أي وقت
+          </li>
+        </ul>
+        <button
+          class="btn-subscribe bg-blue-500 text-white font-bold py-2 px-4 rounded w-full"
+          onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSfv7Tno3xUyYhDr1UYC6xNDT4_o1pMrWRpfgNjprhtjCIrnCw/viewform?usp=sf_link'"
+        >
+          اشترك الآن
+        </button>
+      </div>
+    </div>
+    <h1 class="text-3xl font-bold mb-4">Exemple D'une Séance en direct :</h1>
+    <div class="video-container">
+      <video width="600" controls>
+        <source src="/2024-06-22 03-58-07.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  </body>
+</html>
