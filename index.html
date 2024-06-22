@@ -38,6 +38,7 @@
         display: flex;
         justify-content: center;
         gap: 16px; /* Equivalent to space-x-4 */
+        flex-wrap: wrap; /* To make cards stack on small screens */
       }
 
       .offer-card {
@@ -46,6 +47,7 @@
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Equivalent to shadow-lg */
         border-radius: 8px; /* Equivalent to rounded-lg */
         width: 320px; /* Equivalent to w-80 */
+        margin-bottom: 16px; /* Add margin-bottom for spacing */
       }
 
       .offer-header {
@@ -126,6 +128,70 @@
 
       .bg-blue-500:hover {
         background-color: #2563eb; /* Darker blue */
+      }
+
+      .video-container {
+        margin-top: 24px; /* Add margin-top for spacing */
+      }
+
+      /* Media Queries */
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 20px; /* Equivalent to text-2xl */
+        }
+
+        h2 {
+          font-size: 18px; /* Equivalent to text-lg */
+        }
+
+        p {
+          font-size: 14px; /* Equivalent to text-base */
+        }
+
+        .offer-card {
+          width: 100%; /* Make offer cards take full width on small screens */
+          padding: 16px; /* Reduce padding */
+        }
+
+        .btn-subscribe {
+          padding: 8px; /* Reduce padding */
+        }
+
+        .video-container video {
+          width: 100%; /* Make video responsive */
+        }
+      }
+
+      @media (max-width: 480px) {
+        h1 {
+          font-size: 18px; /* Equivalent to text-xl */
+        }
+
+        h2 {
+          font-size: 16px; /* Equivalent to text-md */
+        }
+
+        p {
+          font-size: 12px; /* Equivalent to text-sm */
+        }
+
+        .offer-card {
+          padding: 12px; /* Reduce padding further */
+        }
+
+        .btn-subscribe {
+          padding: 6px; /* Reduce padding */
+        }
+
+        .offer-header img {
+          width: 48px; /* Equivalent to w-12 */
+          height: 48px; /* Equivalent to h-12 */
+        }
+
+        .offer-badge {
+          font-size: 10px; /* Smaller badge text */
+          padding: 2px 4px; /* Smaller badge padding */
+        }
       }
     </style>
   </head>
